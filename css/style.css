@@ -1,0 +1,286 @@
+/* NS Verhalen website CSS door Neville Notopawiro */
+
+/* De body van de pagina */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #E6E6E9;
+    font-family: NS sans, sans-serif;
+}
+
+body h1 {
+    margin-left: 1em;
+}
+
+body h2 {
+    margin-left: 1em;
+}
+
+
+/* De Header van de website */
+
+/* Navigatie */
+ul {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -3em;
+    padding-right: 2em;   
+}
+
+li {
+    list-style-type: none;
+    margin-right: 1em;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #092869;
+    
+}
+
+/* Logo van de website */
+header img {
+    width: 8em;
+    height: auto;
+    margin: auto;
+}
+
+.main-header {
+    background-color: #ffc917;
+    height: 6em;
+    
+}
+
+/* Filters voor de verhalen */
+form {
+    padding: 1em;
+    display: flex;
+}
+
+/* Haalt vinkje weg 
+input[type=checkbox] {
+    display: none;
+}*/
+
+.genres label:hover {
+    background-color: #ffc917;
+}
+
+.leesduur label:hover {
+    background-color: #ffc917;
+}
+
+/* Genre filter opties, zet het onder elkaar*/
+.genres {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Leesduur filter opties, zet het onder elkaar*/
+.leesduur {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Genre filter opties*/
+.genres label {
+    color: white;
+    background-color: #2685BB;
+    padding: 0.4em;
+    margin: 0.2em;
+}
+
+/* Leesduur filter opties*/
+.leesduur label {
+    color: white;
+    background-color: #092869;
+    padding: 0.4em;
+    margin: 0.2em;
+}
+
+.filter-container > div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h1, h2, h3 {
+    color: #092869;
+}
+
+/* De artikelen */
+
+p > a {
+    color: #2685BB
+}
+
+header > p {
+    color: #2685BB
+}
+
+article {
+    background-color: white;
+    box-shadow: 0em 0.1em 0.25em grey; 
+    padding: 1em;
+    margin: 1.5em;
+    flex: 1;
+}
+
+article header figure {
+    height: 15em;
+    width: 100%;
+    margin: 0;
+}
+
+figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+    
+
+.populair {
+    display: flex;
+}
+
+.nieuwe {
+    display: flex;  
+}
+
+/* Sorteren */
+.sorteren {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 1.5em;
+}
+
+/*----------------------------LOGIN PAGINA-------------------------------*/
+
+/* De main in de body 
+
+fieldset {
+    border: none;
+}
+
+.inlog {
+    background-color: white;
+}
+
+.inlog main {
+    display: flex;
+}
+
+/* De breedte van het tekstvak 
+input[type=email] {
+    max-width: 80%;
+}
+
+/* De breedte van het tekstvak 
+input[type=password] {
+    max-width: 80%;
+}
+
+/* De breedte van de inlog button 
+input[type=submit] {
+    max-width: 25%;
+    background-color: #2685BB;
+    color: white;
+}
+
+/* Zegt dat de eerste section in de body 60% is 
+.inlog main section:first-of-type {
+    flex-basis: 30%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+/* Section inloggen 
+.inloggen {
+    background-color: #ffc917;
+    margin: 1em;
+    }
+
+/* Inlog formulier 
+.inlog-form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.inlog-tekst {
+    margin: 1em;
+    max-width: 5em;
+} */
+
+.inlog-formulier {
+    margin-right: 25%; 
+    margin-left: 25%;
+}
+
+.inloggen {
+    display: flex;
+    flex-basis: 300%;
+    flex-direction: column;
+    background-color: #ffc917;
+}
+
+.inloggen h3 {
+    margin-left: 1em;
+}
+
+legend{
+    margin-bottom: 0.5em;
+}
+
+fieldset {
+    border: none;
+}
+
+.tekstvak {
+    display: flex;
+    width: 200%;
+}
+
+.inlog-knop {
+    background-color: #0079d3;
+    color: white;
+    border: none;
+    padding: 0.5em;
+    width: 6em;
+    margin-top: 0.5em;
+}
+
+
+/* Media queries */
+/* Mobiel */
+
+/* Overzichtpagina */
+/* Scherm onder 500px wordt deze style */
+@media screen and (max-width: 500px) {
+
+.populair {
+  flex-direction: column;
+}
+
+.nieuwe {
+    flex-direction: column; 
+} 
+    
+    
+/* Login pagina */
+
+.inlog-formulier {
+    margin-right: 5%; 
+    margin-left: 5%;
+}    
+        
+.tekstvak {
+    display: flex;
+    width: 150%;
+}
+    
+    
+
+
+
+
